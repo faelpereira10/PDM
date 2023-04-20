@@ -1,0 +1,47 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(aula1());
+}
+
+class aula1 extends StatelessWidget{
+  void clicou(){
+    print("teste");
+  }
+  void a(){
+    print("teste");
+  }
+  void b(){
+    print("teste");
+  }
+  void c(){
+    print("teste");
+  }
+
+  Widget build(BuildContext context){
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Meu primeiro APP!!!"),
+        ),
+        body: Column(
+          children: [
+          Text("Aprendendo Flutter"),
+          Text("Aula no Cefet grupo 2"),
+          ElevatedButton(onPressed: clicou, child: Text("CLIQUE AQUI!")),
+          Column(
+          children: [
+          ElevatedButton(onPressed: a, child: Text("ENVIAR")),
+          ElevatedButton(onPressed: b, child: Text("CANCELAR")),
+          ElevatedButton(onPressed: c, child: Text("SALVAR")),
+        ],),
+        Text("APRENDENDO"),
+        Text("PROGRAMAÇÃO"),
+        Text("FLUTTER")
+        ],
+        
+        ),
+      ),
+    );
+  }
+}
