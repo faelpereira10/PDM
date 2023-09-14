@@ -1,7 +1,7 @@
 import 'package:a/models/categorias.dart';
 import 'package:flutter/material.dart';
 
-import '../models/categorias.dart';
+
 import '../utils/rotas.dart';
 
 class CategoriaItem extends StatelessWidget {
