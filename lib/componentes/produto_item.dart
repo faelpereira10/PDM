@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 class ItemProduto extends StatelessWidget {
@@ -6,7 +7,7 @@ class ItemProduto extends StatelessWidget {
   final String imageUrl;
   final double duration;
   final double cost;
-
+  
   ItemProduto({
     required this.id,
     required this.title,
@@ -17,7 +18,7 @@ class ItemProduto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+     return InkWell(
       onTap: (() => {}),
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
@@ -43,7 +44,6 @@ class ItemProduto extends StatelessWidget {
                 child: Container(
                   width: 300,
                   color: Colors.black54,
-                  // ignore: prefer_const_constructors
                   padding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
                   child: Text(
                     title,
@@ -84,7 +84,7 @@ class ItemProduto extends StatelessWidget {
                       const SizedBox(
                         width: 6,
                       ),
-                      Text('$cost'),
+                       Text('$cost'),
                     ],
                   )
                 ],

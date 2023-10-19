@@ -3,24 +3,23 @@ class Produto {
   final String id;
   final List<String> categories;
   final String title;
-  final double cost;
   final String imageUrl;
-  final int duration;
+  final double duration;
+  final double cost;
   final bool isGlutenFree;
+  final bool isLactoseFree;
   final bool isVegan;
   final bool isVegetarian;
-  final bool isLactoseFree;
 
-  const Produto({
-    required this.id,
-    required this.categories,
-    required this.title,
-    required this.cost,
-    required this.imageUrl,
-    required this.duration,
-    required this.isGlutenFree,
-    required this.isVegan,
-    required this.isVegetarian,
-    required this.isLactoseFree,
-  });
+  const Produto(
+      {required this.id,
+      required this.categories,
+      required this.title,
+      required this.imageUrl,
+      required this.duration,
+      required this.cost,
+      required this.isGlutenFree,
+      required this.isLactoseFree,
+      required this.isVegan,
+      required this.isVegetarian});
 }
