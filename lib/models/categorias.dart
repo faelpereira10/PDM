@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Categoria {
-  final String id;
+  final int id;
   final String titulo;
   final Color color;
 
